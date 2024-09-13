@@ -6,7 +6,7 @@ import * as answer from "@/answer";
 import * as question from "@/question";
 
 import { encodingLengthList, encodeList, decodeList } from "./utils";
-import {DecodedPacket, Packet} from "@/types/packet";
+import { DecodedPacket, Packet } from "@/types/packet";
 
 export * from "@/records/renc";
 

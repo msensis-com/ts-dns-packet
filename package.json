@@ -1,5 +1,5 @@
 {
-  "name": "dns-packet",
+  "name": "@msensis/ts-dns-packet",
   "version": "1.0.0",
   "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
   "author": "Mathias Buus / Austin Hounsel / Icemic Jia / Angelos Bouklis",
@@ -12,12 +12,15 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite build --watch",
-    "format": "prettier --write src/ vite.config.ts"
+    "format": "prettier --write src/ vite.config.ts",
+    "changeset": "changeset"
   },
   "dependencies": {
     "@leichtgewicht/ip-codec": "^2.0.1"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.8",
     "@types/node": "^22.5.4",
     "prettier": "^3.3.3",
     "vite": "^5.4.4",

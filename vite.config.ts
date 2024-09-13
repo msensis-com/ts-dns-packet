@@ -10,7 +10,7 @@ export default defineConfig({
     plugins: [dts()],
     build: {
         lib: {
-            name: "dns-packet",
+            name: "ts-dns-packet",
             entry: "src/index.ts",
             formats: ["es"],
         },

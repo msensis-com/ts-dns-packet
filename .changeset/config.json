@@ -8,7 +8,5 @@
   "linked": [],
   "access": "public",
   "baseBranch": "master",
-  "updateInternalDependencies": "patch",
-  "ignore": [],
-  "directory": ""
+  "updateInternalDependencies": "patch"
 }

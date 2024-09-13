@@ -1,12 +1,14 @@
 {
   "name": "@msensis/ts-dns-packet",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
   "author": "Mathias Buus / Austin Hounsel / Icemic Jia / Angelos Bouklis",
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
-  "files": [ "dist" ],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/index.js",
   "packageManager": "pnpm@9.7.1",
   "engines": {

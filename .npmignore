@@ -1,0 +1,10 @@
+.changeset/
+.github/
+.idea/
+src/
+node_modules/
+.gitignore
+.editorconfig
+LICENCE
+tsconfig.json
+vite.config.ts

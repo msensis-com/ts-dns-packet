@@ -5,11 +5,13 @@
   "author": "Mathias Buus / Austin Hounsel / Icemic Jia / Angelos Bouklis",
   "license": "MIT",
   "type": "module",
+  "files": ["dist"],
   "packageManager": "pnpm@9.7.1",
   "engines": {
     "node": ">=18"
   },
   "scripts": {
+    "prepublishOnly": "pnpm build",
     "build": "vite build",
     "dev": "vite build --watch",
     "format": "prettier --write src/ vite.config.ts",

@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.0.3
+
+### Patch Changes
+
+- [`e94c3b7`](https://github.com/msensis-com/ts-dns-packet/commit/e94c3b7b90e759c008856e21aa2d0cd097934091) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - chore: add .d.ts files
+
 ## 1.0.2
 
 ### Patch Changes

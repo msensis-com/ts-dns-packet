@@ -9,7 +9,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.cjs",
   "packageManager": "pnpm@9.7.1",
   "engines": {
     "node": ">=18"

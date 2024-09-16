@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.0.4
+
+### Patch Changes
+
+- [`bb69583`](https://github.com/msensis-com/ts-dns-packet/commit/bb695834f046ca0b7b0d8b36826ebfb43f0ef9a5) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - export types from index.ts
+
 ## 1.0.3
 
 ### Patch Changes

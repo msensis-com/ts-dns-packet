@@ -13,7 +13,7 @@ export default defineConfig({
         lib: {
             name: "ts-dns-packet",
             entry: "src/index.ts",
-            formats: ["es"],
+            formats: ["cjs"],
         },
         rollupOptions: {
             output: {
@@ -23,6 +23,7 @@ export default defineConfig({
         },
         sourcemap: true,
         outDir: "dist",
+        minify: false
     },
     resolve: {
         alias: {

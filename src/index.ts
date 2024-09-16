@@ -10,6 +10,11 @@ import { DecodedPacket, Packet } from "@/types/packet";
 
 export * from "@/records/renc";
 
+export * from '@/types/answer';
+export * from '@/types/common';
+export * from '@/types/packet';
+export * from '@/types/question';
+
 export { answer, question, header, name, string };
 
 export const FLUSH_MASK = 1 << 15;

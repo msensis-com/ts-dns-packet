@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.0
+
+### Minor Changes
+
+- [`8f6ec78`](https://github.com/msensis-com/ts-dns-packet/commit/8f6ec78a07f7b2652371849f9adca956db0e92f9) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - switch from esm to cjs
+
 ## 1.0.4
 
 ### Patch Changes

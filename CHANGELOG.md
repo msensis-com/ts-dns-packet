@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.2
+
+### Patch Changes
+
+- [`484bad7`](https://github.com/msensis-com/ts-dns-packet/commit/484bad79236236117eb91034a52023796ab44545) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - ignore corrupted/unsupported authorities/additionals
+
 ## 1.1.1
 
 ### Patch Changes

@@ -63,8 +63,33 @@ export function decode(buf: Buffer, offset = 0): DecodedPacket {
 
     offset = decodeList(result.questions, question, buf, offset);
     offset = decodeList(result.answers, answer, buf, offset);
-    offset = decodeList(result.authorities, answer, buf, offset);
-    offset = decodeList(result.additionals, answer, buf, offset);
+
+    // Note: when the authorities or additionals sections are corrupted or unsupported,
+    // we ignore them and continue as if they were never there.
+    // This is done so that we can still parse the rest of the packet.
+    // TODO: Find out why the name decoder fails on some packets.
+
+    try {
+        offset = decodeList(result.authorities, answer, buf, offset);
+    } catch (e) {
+        if (!(e instanceof Error) || e.name !== "RangeError") {
+            // throw e;
+        } else {
+            // ignore
+            result.authorities = [];
+        }
+    }
+
+    try {
+        offset = decodeList(result.additionals, answer, buf, offset);
+    } catch (e) {
+        if (!(e instanceof Error) || e.name !== "RangeError") {
+            // throw e;
+        } else {
+            // ignore
+            result.additionals = [];
+        }
+    }
 
     decode.bytes = offset - oldOffset;
 

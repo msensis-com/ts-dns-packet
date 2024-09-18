@@ -1,39 +1,39 @@
 {
-  "name": "@msensis/ts-dns-packet",
-  "version": "1.1.2",
-  "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
-  "author": "Mathias Buus / Austin Hounsel / Icemic Jia / Angelos Bouklis",
-  "license": "MIT",
-  "type": "module",
-  "types": "./dist/index.d.ts",
-  "files": [
-      "dist"
-  ],
-  "main": "./dist/index.cjs",
-  "homepage": "https://github.com/msensis-com/ts-dns-packet",
-  "packageManager": "pnpm@9.7.1",
-  "engines": {
-      "node": ">=18"
-  },
-  "scripts": {
-      "prepublishOnly": "pnpm build",
-      "build": "vite build",
-      "dev": "vite build --watch",
-      "format": "prettier --write src/ vite.config.ts",
-      "changeset": "changeset",
-      "test": "vitest"
-  },
-  "dependencies": {
-      "@leichtgewicht/ip-codec": "^2.0.1"
-  },
-  "devDependencies": {
-      "@changesets/changelog-github": "^0.5.0",
-      "@changesets/cli": "^2.27.8",
-      "@types/node": "^22.5.4",
-      "prettier": "^3.3.3",
-      "vite": "^5.4.4",
-      "vite-plugin-dts": "^4.2.1",
-      "vite-plugin-no-bundle": "^4.0.0",
-      "vitest": "^2.1.1"
-  }
+    "name": "@msensis/ts-dns-packet",
+    "version": "1.1.3",
+    "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
+    "author": "Mathias Buus / Austin Hounsel / Icemic Jia / Angelos Bouklis",
+    "license": "MIT",
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.cjs",
+    "homepage": "https://github.com/msensis-com/ts-dns-packet",
+    "packageManager": "pnpm@9.7.1",
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "prepublishOnly": "pnpm build",
+        "build": "vite build",
+        "dev": "vite build --watch",
+        "format": "prettier --write src/ vite.config.ts",
+        "changeset": "changeset",
+        "test": "vitest"
+    },
+    "dependencies": {
+        "@leichtgewicht/ip-codec": "^2.0.1"
+    },
+    "devDependencies": {
+        "@changesets/changelog-github": "^0.5.0",
+        "@changesets/cli": "^2.27.8",
+        "@types/node": "^22.5.4",
+        "prettier": "^3.3.3",
+        "vite": "^5.4.4",
+        "vite-plugin-dts": "^4.2.1",
+        "vite-plugin-no-bundle": "^4.0.0",
+        "vitest": "^2.1.1"
+    }
 }

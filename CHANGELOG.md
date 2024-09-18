@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.3
+
+### Patch Changes
+
+- [`f827c2f`](https://github.com/msensis-com/ts-dns-packet/commit/f827c2f62b5c6d0d55d66728212ba2382a8328e7) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - add homepage to package.json
+
 ## 1.1.2
 
 ### Patch Changes

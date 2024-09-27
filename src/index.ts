@@ -100,6 +100,33 @@ export function decode(buf: Buffer, offset = 0): DecodedPacket {
 decode.bytes = 0;
 
 export function encodingLength(result: Packet) {
+    // fix data
+    for (const answer of result.answers) {
+        if ('data' in answer &&
+            typeof answer.data === "object"
+        ) {
+            if (Array.isArray(answer.data)) {
+                let idx = 0;
+                for (const item of answer.data) {
+                    if (typeof item === "object"
+                        && 'type' in item
+                        && item.type === "Buffer"
+                        && 'data' in item
+                        && Array.isArray(item.data)) {
+                        answer.data[idx] = Buffer.from(item.data);
+                    }
+
+                    idx++;
+                }
+            } else if ('type' in answer.data
+                && answer.data.type === "Buffer"
+                && 'data' in answer.data
+                && Array.isArray(answer.data.data)) {
+                answer.data = Buffer.from(answer.data.data);
+            }
+        }
+    }
+
     return (
         header.encodingLength() +
         encodingLengthList(result.questions ?? [], question) +

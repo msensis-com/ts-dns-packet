@@ -101,7 +101,7 @@ decode.bytes = 0;
 
 export function encodingLength(result: Packet) {
     // fix data
-    for (const answer of result.answers) {
+    for (const answer of (result.answers ?? [])) {
         if ('data' in answer &&
             typeof answer.data === "object"
         ) {

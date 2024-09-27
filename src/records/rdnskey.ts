@@ -64,5 +64,15 @@ export function decode(buf: Buffer, offset = 0) {
 decode.bytes = 0;
 
 export function encodingLength(key: DNSKeyValue) {
+    if (
+        typeof key.key === "object"
+        && 'type' in key.key
+        && key.key.type === "Buffer"
+        && 'data' in key.key
+        && Array.isArray(key.key.data)
+    ) {
+        key.key = Buffer.from(key.key.data);
+    }
+
     return 6 + Buffer.byteLength(key.key);
 }

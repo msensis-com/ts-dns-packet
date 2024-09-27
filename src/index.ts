@@ -30,7 +30,30 @@ export enum Flags {
     DNSSEC_OK = 1 << 15,
 }
 
+const fixBuffers = (object: Object) => {
+    if (typeof object !== "object") return object;
+
+    if ('type' in object && object.type === 'Buffer' && 'data' in object && Array.isArray(object.data)) {
+        return Buffer.from(object.data);
+    }
+
+    if (Array.isArray(object)) {
+        for (let i = 0; i < object.length; i++) {
+            object[i] = fixBuffers(object[i]);
+        }
+    } else {
+        for (const key in object) {
+            object[key] = fixBuffers(object[key]);
+        }
+    }
+
+    return object;
+};
+
 export function encode(result: Packet, buf?: Buffer, offset = 0): Buffer {
+    // convert all json-encoded buffers to actual buffers
+    fixBuffers(result);
+
     if (!buf) buf = Buffer.allocUnsafe(encodingLength(result));
     if (!offset) offset = 0;
 

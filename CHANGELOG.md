@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.4
+
+### Patch Changes
+
+- [`9f1e3c3`](https://github.com/msensis-com/ts-dns-packet/commit/9f1e3c327fc3971503d8fe7daf9aeff3a37701c7) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - fix: convert buffer obj to buffer
+
 ## 1.1.3
 
 ### Patch Changes

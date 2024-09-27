@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.6
+
+### Patch Changes
+
+- [`ec4e7cf`](https://github.com/msensis-com/ts-dns-packet/commit/ec4e7cf123423b230fe1bd6c6d3ce3d4f27fdf8f) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - fix dnskey
+
 ## 1.1.5
 
 ### Patch Changes

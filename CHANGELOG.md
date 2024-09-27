@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.7
+
+### Patch Changes
+
+- [`ac76b5d`](https://github.com/msensis-com/ts-dns-packet/commit/ac76b5d5450477da19d2752ef41f26f1d4be4296) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - convert all json-encoded buffers to buffers
+
 ## 1.1.6
 
 ### Patch Changes

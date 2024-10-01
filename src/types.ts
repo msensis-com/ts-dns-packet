@@ -1,4 +1,9 @@
 export function toString(type: number) {
+    if (typeof type === "string") return type;
+    if (typeof type !== "number") {
+        throw new Error("Type must be a number, got " + typeof type);
+    }
+
     switch (type) {
         case 1:
             return "A";
@@ -101,6 +106,7 @@ export function toString(type: number) {
 }
 
 export function toType(name: string) {
+    if (typeof name === "number") return name;
     if (typeof name !== "string") {
         throw new Error("Name must be a string, got " + typeof name);
     }

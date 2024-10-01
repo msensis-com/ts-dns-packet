@@ -101,6 +101,10 @@ export function toString(type: number) {
 }
 
 export function toType(name: string) {
+    if (typeof name !== "string") {
+        throw new Error("Name must be a string, got " + typeof name);
+    }
+
     switch (name.toUpperCase()) {
         case "A":
             return 1;

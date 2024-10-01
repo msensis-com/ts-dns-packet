@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.9
+
+### Patch Changes
+
+- [`67582e9`](https://github.com/msensis-com/ts-dns-packet/commit/67582e996087eecbfea57f713d73eea838ed8e9a) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - fix bug
+
 ## 1.1.8
 
 ### Patch Changes

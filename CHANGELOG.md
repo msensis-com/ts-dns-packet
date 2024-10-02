@@ -1,5 +1,11 @@
 # @msensis/ts-dns-packet
 
+## 1.1.10
+
+### Patch Changes
+
+- [`a254ba7`](https://github.com/msensis-com/ts-dns-packet/commit/a254ba7584fd86a5e9cbc9700409729d2c7295be) Thanks [@ArjixWasTaken](https://github.com/ArjixWasTaken)! - use defineProperty instead of assigning to a parent object, to avoid errors
+
 ## 1.1.9
 
 ### Patch Changes

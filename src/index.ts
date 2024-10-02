@@ -43,7 +43,12 @@ const fixBuffers = (object: Object) => {
         }
     } else {
         for (const key in object) {
-            object[key] = fixBuffers(object[key]);
+            Object.defineProperty(object, key, {
+                configurable: true,
+                enumerable: true,
+                writable: true,
+                value: fixBuffers(object[key]),
+            });
         }
     }
 
